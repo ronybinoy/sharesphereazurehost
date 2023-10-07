@@ -398,7 +398,7 @@ def home(request):
             profile_photo_url = migrant.profile_photo.url
 
     return render(
-        request, "main/home.html", {"user": user, "profile_photo_url": profile_photo_url}
+        request, "home.html", {"user": user, "profile_photo_url": profile_photo_url}
     )
 
 

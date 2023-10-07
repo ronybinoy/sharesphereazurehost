@@ -53,7 +53,7 @@ ROOT_URLCONF = 'auth.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'main', 'Templates')],  # Add the path to the templates folder
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
